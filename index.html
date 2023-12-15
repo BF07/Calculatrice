@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice en ligne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculatrice en ligne</h1>
+
+    <div class="calculatrice">
+        <form action="" name="fCalc" style="display: inline;" onsubmit="return false">
+            <div class="calcwrap">
+                <div id="ecran"></div>
+                <div class="col-1">
+                    <div class="touche-sec">
+                        <input type="button" value="<<" name="special_back">
+                    </div>
+                    <div class="touche-spec">
+                        <input type="button" value="C" name="special_C" id="reset">
+                    </div>
+                    <div class="touche-spec">
+                        <input type="button" value="CE" name="special_CE">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="touche-number">
+                        <input type="button" value="1" name="number_1">
+                    </div>
+                    <div class="touche-number">
+                        <input type="button" value="2" name="number_2">
+                    </div>
+                    <div class="touche-number">
+                        <input type="button" value="3" name="number_3">
+                    </div>
+                    <div class="touche-number">
+                        <input type="button" value="4" name="number_4" >
+                    </div>
+                    <div class="touche-number">
+                        <input type="button" value="5" name="number_5" >
+                    </div>
+                    <div class="touche-number">
+                        <input type="button" value="6" name="number_6" >
+                    </div>
+                    <div class="touche-number">
+                        <input type="button" value="7" name="number_7" >
+                    </div>
+                    <div class="touche-number">
+                        <input type="button" value="8" name="number_8" >
+                    </div>
+                    <div class="touche-number">
+                        <input type="button" value="9" name="number_9" >
+                    </div>
+                    <div class="touche-number">
+                        <input type="button" value="+/-" name="number_positive_or_negative">
+                    </div>
+                    <div class="touche-number">
+                        <input type="button" value="0" name="number_0" >
+                    </div>
+                    <div class="touche-number">
+                        <input type="button" value="," name="virgule">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="touche-operation">
+                        <input type="button" value ="+" name="addition" id="btnAddition">
+                    </div>
+                    <div class="touche-operation">
+                        <input type="button" value ="-" name="soustraction" id="btnSoustraction">
+                    </div>
+                    <div class="touche-operation">
+                        <input type="button" value ="*" name="multiplication" id="btnMultiplication">
+                    </div>
+                    <div class="touche-operation">
+                        <input type="button" value ="/" name="division" id="btnDivision">
+                    </div>
+                    <div class="touche-egal">
+                        <input type="button" value ="=" name="egal" id="btnEqual">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
